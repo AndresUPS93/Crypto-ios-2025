@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  Crypto-iOS
+//
+//  Created by user271851 on 4/11/25.
+//
+
 import SwiftUI
 
 struct ContentView: View {
@@ -6,6 +13,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
+                .padding(80)
             Text("Hello, world!")
         }
         .padding()
@@ -14,4 +22,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        
 }
