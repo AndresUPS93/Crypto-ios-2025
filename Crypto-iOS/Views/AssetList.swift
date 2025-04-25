@@ -7,8 +7,8 @@ struct AssetList: View {
 //    @State var task: Task<Void, Never>?
     
     var body: some View {
-        
-        NavigationStack{
+        NavigationStack {
+            
             Text(viewModel.errorMessage ?? "")
                 
             List {
@@ -18,7 +18,6 @@ struct AssetList: View {
                     } label: {
                         AssetView(assetViewState: .init(asset))
                     }
-
                 }
             }
             .listStyle(.plain)
@@ -26,8 +25,9 @@ struct AssetList: View {
                await viewModel.fetchAssets()
             }
             .navigationTitle("Home")
+            
         }
-        
+       
 //        .onAppear {
 //            task = Task {
 //                await viewModel.fetchAssets()
